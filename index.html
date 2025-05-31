@@ -1,0 +1,623 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link
+      as="style"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B600%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+      onload="this.rel='stylesheet'"
+      rel="stylesheet"
+    />
+    <title>Shambel Mebratu - DevOps Engineer Portfolio</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .project-card:hover .project-overlay {
+        opacity: 1;
+      }
+      .project-card:hover img {
+        transform: scale(1.05);
+      }
+      .active-nav-link {
+        color: #2563eb;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gray-50 text-gray-800"
+    style="font-family: Inter, 'Noto Sans', sans-serif"
+  >
+    <div
+      class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header
+          class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 px-6 sm:px-10 py-4 bg-white shadow-sm"
+        >
+          <div class="flex items-center gap-3 text-gray-900">
+            <div class="size-8 text-blue-600">
+              <svg
+                fill="none"
+                viewBox="0 0 48 48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <!-- Gear (DevOps/Engineering) -->
+                  <circle cx="24" cy="24" r="10" fill="#2563eb"/>
+                  <g stroke="#2563eb" stroke-width="2" fill="none">
+                    <path d="M24 8V4"/>
+                    <path d="M24 44v-4"/>
+                    <path d="M40 24h4"/>
+                    <path d="M4 24h4"/>
+                    <path d="M34.14 13.86l2.83-2.83"/>
+                    <path d="M11.03 36.97l2.83-2.83"/>
+                    <path d="M34.14 34.14l2.83 2.83"/>
+                    <path d="M11.03 11.03l2.83 2.83"/>
+                  </g>
+                  <!-- Infinity symbol (DevOps) -->
+                  <path d="M17 27c2.5-4 7.5-4 10 0s7.5 4 10 0" stroke="#fff" stroke-width="2" fill="none"/>
+                  <path d="M31 21c-2.5 4-7.5 4-10 0s-7.5-4-10 0" stroke="#fff" stroke-width="2" fill="none"/>
+                </g>
+                
+                <defs>
+                  <clipPath id="clip0_6_319">
+                    <rect fill="white" height="48" width="48"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2
+              class="text-gray-900 text-xl font-semibold leading-tight tracking-tight"
+            >
+              Shambel Mebratu
+            </h2>
+          </div>
+          <nav class="hidden md:flex items-center gap-6">
+            <a
+              class="text-gray-600 hover:text-blue-600 text-sm font-medium leading-normal transition-colors"
+              href="#about"
+              >Summary</a
+            >
+            <a
+              class="text-gray-600 hover:text-blue-600 text-sm font-medium leading-normal transition-colors"
+              href="#experience"
+              >Work Experience</a
+            >
+            <a
+              class="text-gray-600 hover:text-blue-600 text-sm font-medium leading-normal transition-colors"
+              href="#skills"
+              >Skills</a
+            >
+            <a
+              class="text-gray-600 hover:text-blue-600 text-sm font-medium leading-normal transition-colors"
+              href="#education-certifications"
+              >Education &amp; Certifications</a
+            >
+            <a
+              class="text-gray-600 hover:text-blue-600 text-sm font-medium leading-normal transition-colors"
+              href="#contact"
+              >Contact</a
+            >
+          </nav>
+          <div class="flex items-center gap-4">
+            <button
+              class="md:hidden flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-9 bg-gray-100 hover:bg-gray-200 text-gray-700 gap-2 text-sm font-medium leading-normal tracking-[0.015em] min-w-0 px-2.5 transition-colors"
+            >
+              <div
+                class="text-gray-700"
+                data-icon="List"
+                data-size="20px"
+                data-weight="regular"
+              >
+                <svg
+                  fill="currentColor"
+                  height="20px"
+                  viewBox="0 0 256 256"
+                  width="20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-gray-200 shadow-sm"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvOO4QA4Uoudzp8vuRPl9Q2lcrhleloTA_ZpP6i_CGdzZgYXxbX4KbKybbvkbpySVXkVxQrNnuu7DveXaQpX5DLSlm2qW-4KGJ1Y67As27ZbPAhZYxDob5d7gcSJa3jv68e43QaMN01g61Q_qN7R9yqzcfAalCMilqFJuwD5yjPpphiphl4UivDQv_rlZMi7rZmPCsIrNQxpArcrmAkImtslwcqgaopZUeNLYhNbndloHgIf8vMHVt8pZdu2fHkCE4ImhFeyio_w');
+              "
+            ></div>
+          </div>
+        </header>
+        <main
+          class="px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 flex flex-1 flex-col py-8 lg:py-12 pt-24 sm:pt-28"
+        >
+          <section class="py-12 lg:py-16" id="about">
+            <div
+              class="layout-content-container flex flex-col max-w-6xl flex-1"
+            >
+              <div class="flex flex-col items-center text-center gap-6">
+                <div
+                  class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-32 border-4 border-blue-600 shadow-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvOO4QA4Uoudzp8vuRPl9Q2lcrhleloTA_ZpP6i_CGdzZgYXxbX4KbKybbvkbpySVXkVxQrNnuu7DveXaQpX5DLSlm2qW-4KGJ1Y67As27ZbPAhZYxDob5d7gcSJa3jv68e43QaMN01g61Q_qN7R9yqzcfAalCMilqFJuwD5yjPpphiphl4UivDQv_rlZMi7rZmPCsIrNQxpArcrmAkImtslwcqgaopZUeNLYhNbndloHgIf8vMHVt8pZdu2fHkCE4ImhFeyio_w');
+                  "
+                ></div>
+                <div class="flex flex-col gap-2">
+                  <h1
+                    class="text-gray-900 text-4xl sm:text-5xl font-bold leading-tight tracking-tight"
+                  >
+                    Shambel Mebratu
+                  </h1>
+                  <p
+                    class="text-blue-600 text-xl sm:text-2xl font-semibold leading-normal"
+                  >
+                    DevOps Engineer
+                  </p>
+                </div>
+                <p
+                  class="text-gray-700 text-base sm:text-lg font-normal leading-relaxed max-w-3xl"
+                >
+                  A DevOps engineer with a solid background in computer science
+                  and engineering, specializing in Docker, Kubernetes, and CI/CD
+                  pipeline implementation. Proficient in cloud infrastructure
+                  and committed to continuous learning and adapting to new
+                  technologies. Broad skill set includes software development,
+                  cloud computing, and DevOps procedures, backed by
+                  certifications and practical experience
+                </p>
+                <div class="flex gap-4 mt-4">
+                  <a
+                    class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 bg-blue-600 text-white hover:bg-blue-700"
+                    href="#contact"
+                    >Get in Touch</a
+                  >
+                 
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="py-12 lg:py-16" id="experience">
+            <div
+              class="layout-content-container flex flex-col max-w-6xl flex-1 mx-auto px-4"
+            >
+              <div
+                class="flex flex-col items-center text-center gap-4 mb-8 sm:mb-12"
+              >
+                <h2
+                  class="text-gray-900 text-3xl sm:text-4xl font-bold leading-tight tracking-tight"
+                >
+                  Work Experience
+                </h2>
+                <p
+                  class="text-gray-600 text-base sm:text-lg font-normal leading-normal max-w-2xl"
+                >
+                  My professional journey in the world of DevOps and cloud
+                  engineering.
+                </p>
+              </div>
+              <div class="space-y-8">
+                <div
+                  class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600"
+                >
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    DevOps Engineer
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-1">
+                    Convex Technologies | November 2024 - Present| Hybrid
+                  </p>
+                  <ul
+                    class="list-disc list-inside text-gray-700 space-y-1 text-sm"
+                  >
+                    <li>
+                      Deploy and maintain betting and gaming sites
+                    </li>
+                    <li>
+                      Set up development infrastructure to streamline team workflows
+                    </li>
+                    <li>
+                      Install, configure, and maintain various tools that enhance productivity and efficiency for the team and company
+                    </li>
+                    <li>
+                      Implement and optimize CI/CD pipeline workflows and containerization to improve deployment processes
+                    </li>
+                    <li>
+                      monitor system performance and troubleshoot issues
+                    </li>
+                    <li>
+                      Manage databases
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600"
+                >
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    DevOps Engineer
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-1">
+                    Kacha Digital Financial Services S.C | June 2024 - Present, Part-Time | A private mobile wallet.
+                  </p>
+                  <ul
+                    class="list-disc list-inside text-gray-700 space-y-1 text-sm"
+                  >
+                    <li>Set up development infrastructure, including private GitLab and private Docker image registries.
+                    </li>
+                    <li>
+                      Implemented CI/CD pipelines and containerization strategies.
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600"
+                >
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    DevOps Engineer
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-1">
+                    Ashewa Technology Solutions S.C | November 2023 - Present, Remote |
+                  </p>
+                  <ul
+                    class="list-disc list-inside text-gray-700 space-y-1 text-sm"
+                  >
+                    <li>
+                      Specializes in e-commerce, on-demand projects, and ERP software.
+                    </li>
+                    <li>Automated development processes with CI/CD pipelines.</li>
+                    <li>Managed AWS services (EC2,LightSail) and Kubernetes.</li>
+                    <li>
+                      Deployed Odoo ERP systems, microservices, and SaaS on Kubernetes and Docker.
+                    </li>
+                    <li>
+                      Participated in infrastructure monitoring and incident
+                      response.
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600"
+                >
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    DevOps Engineer
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-1">
+                    Addispay Financial Technology S.C | April 2023 - May 2024 | A payment gateway provider.
+                  </p>
+                  <ul
+                    class="list-disc list-inside text-gray-700 space-y-1 text-sm"
+                  >
+                    <li>
+                      Managed infrastructure and data center operations.
+                    </li>
+                    <li>Streamlined software deployment through CI/CD pipelines.</li>
+                    <li>Installed on-premises Kubernetes and deployed systems using Docker and Kubernetes, facilitating container orchestration and management.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="py-12 lg:py-16 bg-gray-100 rounded-xl" id="skills">
+            <div
+              class="layout-content-container flex flex-col max-w-6xl flex-1 mx-auto px-4"
+            >
+              <div
+                class="flex flex-col items-center text-center gap-4 mb-8 sm:mb-12"
+              >
+                <h2
+                  class="text-gray-900 text-3xl sm:text-4xl font-bold leading-tight tracking-tight"
+                >
+                  Skills
+                </h2>
+                <p
+                  class="text-gray-600 text-base sm:text-lg font-normal leading-normal max-w-2xl"
+                >
+                  A diverse skillset honed through years of hands-on experience
+                  in various DevOps domains.
+                </p>
+              </div>
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+              >
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                    Cloud Platforms
+                  </h3>
+                  <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>
+                      Amazon Web Services 
+                    </li>
+                    <li>
+                      Microsoft Azure
+                    </li>
+                    <li>
+                      Google Cloud Platform (GCP)
+                    </li>
+                  </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                    CI/CD &amp; Automation
+                  </h3>
+                  <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>GitLab CI, GitHub Actions, Jenkins</li>
+                    <li>Ansible</li>
+                    <li>
+                      Terraform, AWS CloudFormation, Azure Resource Manager
+                    </li>
+                  </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                    Containerization &amp; Orchestration
+                  </h3>
+                  <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Docker, Kubernetes</li>
+                    <li>Helm, Istio, OpenShift</li>
+                  </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                    Monitoring &amp; Logging
+                  </h3>
+                  <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Prometheus, Grafana</li>
+                    <li>ELK Stack (Elasticsearch, Logstash, Kibana)</li>
+                  </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                    Scripting &amp; Programming
+                  </h3>
+                  <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Python, Bash, PowerShell</li>
+                    <li>YAML, JSON</li>
+                  </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                    Version Control &amp; Collaboration
+                  </h3>
+                  <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Git, GitHub, GitLab, Bitbucket</li>
+                    <li>Jira, mattermost</li>
+                  </ul>
+                </div>
+                <div
+                  class="bg-white p-6 rounded-lg shadow-md col-span-1 sm:col-span-2 lg:col-span-3"
+                >
+                  <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                    Operating Systems &amp; Networking
+                  </h3>
+                  <ul
+                    class="list-disc list-inside text-gray-700 space-y-1 sm:columns-2"
+                  >
+                    <li>Linux (Ubuntu, CentOS, RHEL)</li>
+                    <li>Windows Server</li>
+                    <li>TCP/IP, DNS, HTTP/S, Load Balancing, Firewalls</li>
+                    <li>Network Security</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="py-12 lg:py-16" id="education-certifications">
+            <div
+              class="layout-content-container flex flex-col max-w-6xl flex-1 mx-auto px-4"
+            >
+              <div
+                class="flex flex-col items-center text-center gap-4 mb-8 sm:mb-12"
+              >
+                <h2
+                  class="text-gray-900 text-3xl sm:text-4xl font-bold leading-tight tracking-tight"
+                >
+                  Education &amp; Certifications
+                </h2>
+                <p
+                  class="text-gray-600 text-base sm:text-lg font-normal leading-normal max-w-2xl"
+                >
+                  My academic qualifications and industry-recognized
+                  credentials.
+                </p>
+              </div>
+              <div class="space-y-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+                    Education
+                  </h3>
+                  <div class="border-l-4 border-blue-500 pl-4">
+                    <h4 class="text-xl font-semibold text-gray-800">
+                      BSc in Computer Science Engineering
+                    </h4>
+                    <p class="text-gray-600 text-sm">
+                      Adama Science and Technology University | Adama, Ethiopia
+                    </p>
+                    <p class="text-gray-500 text-xs mt-1">
+                      Graduated: December 2020
+                    </p>
+                    <p class="text-gray-700 text-sm mt-2">
+                      Relevant Coursework: Data Structures &amp; Algorithms,
+                      Operating Systems, Computer Networks, Database Management,
+                      Software Engineering.
+                    </p>
+                    <a
+                      class="text-blue-600 hover:underline text-xs mt-1 inline-block"
+                      href="https://drive.google.com/file/d/1jIzOjRtgYM-RNu4nAR2sf8oXMJcya5V1/view"
+                      target="_blank"
+                      >View Credential</a
+                    >
+                  </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+                    Certifications
+                  </h3>
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+                  >
+                    <div class="border-l-4 border-green-500 pl-4 py-2">
+                      <h4 class="text-lg font-semibold text-gray-800">
+                        Cloud Developer Nanodegree
+                      </h4>
+                      <p class="text-gray-600 text-sm">Udacity</p>
+                      <p class="text-gray-500 text-xs mt-1">
+                        Issued: October 2022
+                      </p>
+                      <a
+                        class="text-blue-600 hover:underline text-xs mt-1 inline-block"
+                        href="https://www.udacity.com/certificate/WNTCPGWG"
+                        target="_blank"
+                        >View Credential</a
+                      >
+                    </div>
+                    <div class="border-l-4 border-green-500 pl-4 py-2">
+                      <h4 class="text-lg font-semibold text-gray-800">
+                        Container & Kubernetes Essentials V2
+                      </h4>
+                      <p class="text-gray-600 text-sm">
+                        Issued by Coursera and Authorized by IBM
+                      </p>
+                      <p class="text-gray-500 text-xs mt-1">
+                        Issued: September, 2023
+                      </p>
+                      <a
+                        class="text-blue-600 hover:underline text-xs mt-1 inline-block"
+                        href="https://www.credly.com/badges/438ae3ac-3481-4016-bb99-27adac6fbcf4/public_url"
+                        target="_blank"
+                        >View Credential</a
+                      >
+                    </div>
+                    <div class="border-l-4 border-green-500 pl-4 py-2">
+                      <h4 class="text-lg font-semibold text-gray-800">
+                        Application Development using Microservices and Serverless
+                      </h4>
+                      <p class="text-gray-600 text-sm">Issued by Coursera and Authorized by IBM</p>
+                      <p class="text-gray-500 text-xs mt-1">
+                        Issued: October, 2023
+                      </p>
+                      <a
+                        class="text-blue-600 hover:underline text-xs mt-1 inline-block"
+                        href="https://www.credly.com/badges/a41c0ce5-77f1-4723-b186-975b9de8866a/public_url"
+                        target="_blank"
+                        >View Credential</a
+                      >
+                    </div>
+                    <div class="border-l-4 border-green-500 pl-4 py-2">
+                      <h4 class="text-lg font-semibold text-gray-800">
+                        Continuous Integration and Continuous Delivery (CI/CD)
+                      </h4>
+                      <p class="text-gray-600 text-sm">Coursera</p>
+                      <p class="text-gray-500 text-xs mt-1">
+                        Issued: September 2023
+                      </p>
+                      <a
+                        class="text-blue-600 hover:underline text-xs mt-1 inline-block"
+                        href="https://www.coursera.org/account/accomplishments/certificate/ETZAXXM7HXTZ"
+                        target="_blank"
+                        >View Credential</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="py-12 lg:py-16 bg-gray-100 rounded-xl mt-12 lg:mt-16"
+            id="contact"
+          >
+            <div
+              class="layout-content-container flex flex-col max-w-6xl flex-1 mx-auto px-4"
+            >
+              <div
+                class="flex flex-col items-center text-center gap-4 mb-8 sm:mb-12"
+              >
+                <h2
+                  class="text-gray-900 text-3xl sm:text-4xl font-bold leading-tight tracking-tight"
+                >
+                  Get In Touch
+                </h2>
+                <p
+                  class="text-gray-600 text-base sm:text-lg font-normal leading-normal max-w-2xl"
+                >
+                  I'm always open to discussing new projects, creative ideas, or
+                  opportunities to be part of your visions.
+                </p>
+              </div>
+              <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+                <div class="space-y-4">
+                  <div class="flex items-center gap-3">
+                    <svg
+                      class="w-6 h-6 text-blue-600"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                      ></path>
+                      <path
+                        d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                      ></path>
+                    </svg>
+                    <a
+                      class="text-gray-700 hover:text-blue-600"
+                      href="mailto:shambel.mebratu@example.com"
+                      >shambelmebratu@gmail.com</a
+                    >
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <svg
+                      class="w-6 h-6 text-blue-600"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                      ></path>
+                    </svg>
+                    <a
+                      class="text-gray-700 hover:text-blue-600"
+                      href="https://www.linkedin.com/in/shambel-mebratu-436bb0164"
+                      target="_blank"
+                      >linkedin.com/in/shambelmebratu</a
+                    >
+                  </div>
+                  
+                  <div class="flex items-center gap-3">
+                    <svg
+                      class="w-6 h-6 text-blue-600"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      ></path>
+                    </svg>
+                    <a
+                      class="text-gray-700 hover:text-blue-600"
+                      href="https://github.com/shambelmebratu"
+                      target="_blank"
+                      >github.com/shambelmebratu</a
+                    >
+                  </div>
+                </div>        
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="py-8 text-center border-t border-gray-200 bg-white">
+          <p class="text-sm text-gray-500">
+            © <script>document.write(new Date().getFullYear())</script> Shambel Mebratu. All rights reserved.
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
